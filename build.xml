@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<project name="kde" default="kde" basedir=".">
+
+	
+	<target name="kde">
+
+        <javac srcdir="src" destdir="classes" classpath="ext/colt.jar:ext/ssj.jar:ext/log4j-1.2.8.jar:ext/junit.jar"/>
+		<jar jarfile="lib/kde.jar" basedir="classes" includes="com/kruchten/**" />
+		
+		
+	</target>
+
+</project>
